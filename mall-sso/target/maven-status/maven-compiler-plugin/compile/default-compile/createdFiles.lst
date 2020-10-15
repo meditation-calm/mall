@@ -1,0 +1,3 @@
+cn\fjcpc\sso\shiro\ShiroConfiguration.class
+cn\fjcpc\sso\shiro\UserRealm.class
+cn\fjcpc\sso\controller\LoginController.class
