@@ -1,0 +1,9 @@
+cn\fjcpc\manager\controller\ContentCategoryController.class
+cn\fjcpc\manager\controller\ImageController.class
+cn\fjcpc\manager\controller\ItemDescController.class
+cn\fjcpc\manager\aop\ServiceExceptionAop.class
+cn\fjcpc\manager\controller\ItemController.class
+cn\fjcpc\manager\controller\PageController.class
+cn\fjcpc\manager\controller\ItemCatController.class
+cn\fjcpc\manager\controller\ItemParamController.class
+cn\fjcpc\manager\exception\RestCtrlExceptionHandler.class

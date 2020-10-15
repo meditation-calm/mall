@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- 开启对@AspectJ注解支持 -->
+    <aop:aspectj-autoproxy proxy-target-class="true" />
+
+    <context:component-scan base-package="cn.fjcpc.manager" />
+    <mvc:annotation-driven />
+
+    <!--配置资源映射-->
+    <mvc:resources mapping="/js/**" location="/js/"></mvc:resources>
+    <mvc:resources mapping="/css/**" location="/css/"></mvc:resources>
+
+    <!-- SpringMVC视图解析器 -->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+    <!-- 配置多媒体解析器 -->
+    <!-- 定义文件上传解析器 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="UTF-8"></property>
+        <!-- 设定文件上传的最大值5MB，5*1024*1024 -->
+        <property name="maxUploadSize" value="5242880"></property>
+    </bean>
+
+    <!-- 引用dubbo服务 -->
+    <dubbo:application name="mall-manager-web" />
+    <dubbo:registry protocol="zookeeper" address="192.168.211.137:2181" />
+    <dubbo:reference interface="cn.fjcpc.manager.service.ItemService" id="itemService" />
+    <dubbo:reference interface="cn.fjcpc.manager.service.ItemDescService" id="itemDescService" />
+    <dubbo:reference interface="cn.fjcpc.manager.service.ItemCatService" id="itemCatService" />
+    <dubbo:reference interface="cn.fjcpc.manager.service.ItemParamService" id="itemParamService" />
+    <dubbo:reference interface="cn.fjcpc.manager.service.ContentCategoryService" id="contentCategoryService" />
+    <dubbo:reference interface="cn.fjcpc.manager.service.ContentService" id="contentService" />
+
+</beans>
