@@ -1,0 +1,4 @@
+127.0.0.1 - - [05/Sep/2020:15:39:26 +0800] "GET /rest/itemcat/all?callback=category.getDataService HTTP/1.1" 200 46086 http-bio-8081-exec-1 1096
+127.0.0.1 - - [05/Sep/2020:15:43:56 +0800] "GET /rest/itemcat/all?callback=category.getDataService HTTP/1.1" 200 46086 http-bio-8081-exec-3 583
+127.0.0.1 - - [05/Sep/2020:15:44:44 +0800] "GET /rest/itemcat/all?callback=category.getDataService HTTP/1.1" 200 46086 http-bio-8081-exec-5 238
+127.0.0.1 - - [05/Sep/2020:15:53:02 +0800] "GET /rest/itemcat/all?callback=category.getDataService HTTP/1.1" 200 46086 http-bio-8081-exec-7 232

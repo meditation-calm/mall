@@ -1,0 +1,12 @@
+cn\fjcpc\item\controller\ItemController.class
+cn\fjcpc\item\service\impl\ItemServiceImpl.class
+cn\fjcpc\item\service\impl\ItemParamItemServiceImpl.class
+cn\fjcpc\item\service\ItemParamItemService.class
+cn\fjcpc\item\pojo\ParamNode.class
+cn\fjcpc\item\controller\ItemCatController.class
+cn\fjcpc\item\service\ItemService.class
+cn\fjcpc\item\controller\ItemDescController.class
+cn\fjcpc\item\pojo\ItemParam.class
+cn\fjcpc\item\controller\ItemParamItemController.class
+cn\fjcpc\item\service\impl\ItemDescServiceImpl.class
+cn\fjcpc\item\service\ItemDescService.class
