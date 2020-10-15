@@ -1,0 +1,6 @@
+cn\fjcpc\search\controller\ItemSolrController.class
+cn\fjcpc\search\service\impl\ItemSolrServiceImpl.class
+cn\fjcpc\search\controller\ItemSearchController.class
+cn\fjcpc\search\service\impl\ItemSearchServiceImpl.class
+cn\fjcpc\search\service\ItemSolrService.class
+cn\fjcpc\search\service\ItemSearchService.class
