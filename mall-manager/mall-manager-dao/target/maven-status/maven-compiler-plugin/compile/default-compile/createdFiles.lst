@@ -1,0 +1,12 @@
+cn\fjcpc\manager\mapper\TbContentMapper.class
+cn\fjcpc\manager\mapper\TbItemParamItemMapper.class
+cn\fjcpc\manager\mapper\TbItemDescMapper.class
+cn\fjcpc\manager\mapper\TbOrderItemMapper.class
+cn\fjcpc\manager\mapper\TbItemCatMapper.class
+cn\fjcpc\manager\mapper\TbOrderMapper.class
+cn\fjcpc\manager\mapper\TbOrderShippingMapper.class
+cn\fjcpc\manager\mapper\TbContentCategoryMapper.class
+cn\fjcpc\manager\mapper\TbUserMapper.class
+cn\fjcpc\manager\mapper\TbContentCopyMapper.class
+cn\fjcpc\manager\mapper\TbItemMapper.class
+cn\fjcpc\manager\mapper\TbItemParamMapper.class
